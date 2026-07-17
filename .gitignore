@@ -1,12 +1,11 @@
 node_modules/
 vendor/
-.env
 .uvt/
 tests/generated/
-uvt-report/
-/storage/
-/bootstrap/cache/
-*.log
+.env
+*.local
+
+# Keep UVT plugin packages
 !uvt-packages/
 !uvt-packages/**/dist/
 !uvt-packages/**/dist/**
