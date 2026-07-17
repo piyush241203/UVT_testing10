@@ -7,7 +7,6 @@ uvt-report/
 /storage/
 /bootstrap/cache/
 *.log
-
-/node_modules/
-/.uvt/
-/tests/generated/
+!uvt-packages/
+uvt-packages/**/node_modules/
+package-lock.json
