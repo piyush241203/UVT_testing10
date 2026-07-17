@@ -9,4 +9,3 @@ uvt-report/
 *.log
 !uvt-packages/
 uvt-packages/**/node_modules/
-package-lock.json
