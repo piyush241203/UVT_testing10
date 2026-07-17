@@ -2,7 +2,7 @@
 <div class="hero">
   <span class="badge badge-red" style="margin-bottom:1rem; display:inline-block;">🔴 Laravel 11 System</span>
   <h1>Laravel — Visual Testing</h1>
-  <p>Zero-config visual regression testing powered by Percy and UVT. Protect your Laravel UI across every commit.</p>
+  <p>Zero-config visual regression testing powered by Percy and UVT. Protect your Laravel UI across every commit. Selective testing confirmed.</p>
   <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
     <a href="/services" class="btn btn-primary">Explore Features &rarr;</a>
     <a href="/about" class="btn btn-outline">Documentation</a>
