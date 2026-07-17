@@ -4,8 +4,8 @@ vendor/
 .uvt/
 tests/generated/
 uvt-report/
-storage/
-bootstrap/cache/
+/storage/
+/bootstrap/cache/
 *.log
 
 /node_modules/
