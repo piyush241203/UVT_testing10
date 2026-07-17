@@ -8,4 +8,6 @@ uvt-report/
 /bootstrap/cache/
 *.log
 !uvt-packages/
+!uvt-packages/**/dist/
+!uvt-packages/**/dist/**
 uvt-packages/**/node_modules/
