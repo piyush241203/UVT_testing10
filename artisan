@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+$cmd = $argv[1] ?? '';
+if ($cmd === 'serve') {
+    $port = 8000;
+    foreach ($argv as $arg) {
+        if (str_contains($arg, '--port=')) {
+            $port = (int) str_replace('--port=', '', $arg);
+        }
+    }
+    passthru("php -S 0.0.0.0:$port index.php");
+} else {
+    echo "Laravel-UVT Demo Artisan CLI\n";
+    echo "Available commands:\n";
+    echo "  serve   Start the dev server (php -S 0.0.0.0:8000)\n";
+}

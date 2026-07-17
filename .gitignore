@@ -1,0 +1,13 @@
+node_modules/
+vendor/
+.env
+.uvt/
+tests/generated/
+uvt-report/
+storage/
+bootstrap/cache/
+*.log
+
+/node_modules/
+/.uvt/
+/tests/generated/

@@ -1,0 +1,16 @@
+{
+  "name": "laravel-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Laravel PHP demo for UVT visual testing",
+  "scripts": {
+    "start": "php -S 0.0.0.0:8000",
+    "dev": "php -S 0.0.0.0:8000"
+  },
+  "devDependencies": {
+    "@percy/cli": "1.30.2",
+    "@percy/playwright": "1.1.0",
+    "@uvt/cli": "file:./uvt-packages/cli",
+    "playwright": "^1.61.1"
+  }
+}
