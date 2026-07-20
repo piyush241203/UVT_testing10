@@ -1,9 +1,10 @@
 <?php $reqId = 'req-' . substr(md5(microtime()), 0, 8);
 $buildTime = date('H:i:s'); ?>
 <div class="hero">
-  <span class="badge badge-red" style="margin-bottom:1rem; display:inline-block;">🔴 Laravel 11 — UI Round 2 🎯</span>
-  <h1>Visual Testing for<br>Laravel Apps</h1>
-  <p>Zero-config visual regression testing powered by Percy and UVT. Protect your Laravel UI across every commit.</p>
+  <span class="badge badge-red" style="margin-bottom:1rem; display:inline-block;">🔴 Laravel 11 — UVT Percy Verified v3 ✅</span>
+  <h1>Visual Testing for<br>Laravel Applications</h1>
+  <p>Zero-config visual regression testing powered by Percy and UVT. Full route coverage across every commit.</p>
+
   <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
     <a href="/services" class="btn btn-primary">Explore Features →</a>
     <a href="/about" class="btn btn-outline">Documentation</a>
