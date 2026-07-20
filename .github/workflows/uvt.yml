@@ -80,7 +80,19 @@ jobs:
           echo "======================="
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-
+      - name: Ensure UVT CLI is installed
+        run: |
+          if ! npx uvt --version &>/dev/null; then
+            echo "UVT CLI not found. Installing..."
+            npm install -D @uvt/cli || {
+              echo "UVT CLI was not found."
+              echo "Detected package manager: npm"
+              echo "Workspace: No"
+              echo "Attempted installation: npm install -D @uvt/cli"
+              echo "Please verify package installation."
+              exit 1
+            }
+          fi
 
       - name: Cache Playwright Browsers
         id: playwright-cache
@@ -109,13 +121,14 @@ jobs:
       - name: Wait for local server
         run: |
           for i in {1..60}; do
-            curl -s http://127.0.0.1:8000 && break || sleep 2
+            curl -s http://localhost:8000 && break || sleep 2
           done
 
       - name: Run visual regression tests
-        run: npx uvt test --changed --host 127.0.0.1 --port 8000
+        run: npx percy exec -- npx uvt test --changed --port 8000
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+
           
       - name: Teardown background processes
         if: always()
