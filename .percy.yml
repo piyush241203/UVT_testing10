@@ -7,5 +7,5 @@ snapshot:
   min-height: 1024
   enable-javascript: false
 discovery:
-  network-idle-timeout: 1000
+  network-idle-timeout: 750
   # Framework: Laravel | Project: SSR

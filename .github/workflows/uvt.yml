@@ -34,7 +34,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: UVT Environment Diagnostic
         run: |
@@ -142,4 +142,3 @@ jobs:
       - name: Teardown background processes
         if: always()
         run: pkill -f "php" || true
-
