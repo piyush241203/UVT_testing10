@@ -115,17 +115,10 @@ jobs:
         run: npm run build --if-present
         
 
-      - name: Start dev server in background
-        run: php artisan serve --port 8000 &
-
-      - name: Wait for local server
-        run: |
-          for i in {1..60}; do
-            curl -s http://localhost:8000 && break || sleep 2
-          done
-
       - name: Run visual regression tests
-        run: node uvt-packages/cli/dist/bin.js run
+        # CORRECT PATTERN: npx percy exec -- <uvt command>
+        # UVT auto-starts 'php artisan serve' internally on port 8000.
+        run: npx percy exec -- node uvt-packages/cli/dist/bin.js test --all --port 8000
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
