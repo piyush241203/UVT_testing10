@@ -269,6 +269,18 @@ class LegacyMaskingStabilizer {
                     '[class*="intercom" i]',
                     '[class*="drift-widget" i]',
                     '.newsletter-popup',
+                    /* Floating / Sticky Overlays — covers PHP demo .floating-ad, .sticky-ad, #php-promo */
+                    '[class*="floating-ad" i]',
+                    '[class*="sticky-ad" i]',
+                    '[class*="popup-ad" i]',
+                    '[class*="overlay-ad" i]',
+                    /* Affiliate / Banner Ads — covers PHP demo .affiliate-banner, .banner-ad */
+                    '[class*="affiliate-banner" i]',
+                    '[class*="banner-ad" i]',
+                    '[class*="affiliate" i]',
+                    '[id*="affiliate" i]',
+                    '.banner-ad',
+                    '.affiliate-banner',
                     /* UVT hide attributes */
                     '[data-percy-hide="true"]',
                     '[data-percy-ignore="true"]'

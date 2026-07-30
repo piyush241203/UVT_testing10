@@ -253,6 +253,12 @@ class PercyProvider {
         [class*="sponsored-card" i],
         [class*="promoted-content" i],
         [class*="native-ad" i],
+        [class*="affiliate-banner" i],
+        [class*="affiliate" i],
+        [id*="affiliate" i],
+        [class*="banner-ad" i],
+        .affiliate-banner,
+        .banner-ad,
 
         /* ── Cookie / GDPR Banners ── */
         [class*="cookie-banner" i],

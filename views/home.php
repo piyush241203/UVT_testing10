@@ -1,11 +1,11 @@
 <?php $reqId = 'req-' . substr(md5(microtime()), 0, 8);
 $buildTime = date('H:i:s'); ?>
 <div class="hero">
-  <span class="badge badge-green" style="margin-bottom:1rem; display:inline-block; background:#10b981; color:#fff; padding:6px 14px; border-radius:20px; font-weight:bold; box-shadow: 0 2px 8px rgba(16,185,129,0.4);">✨ Certified v5.1</span>
+  <span class="badge badge-green" style="margin-bottom:1rem; display:inline-block; background:#a855f7; color:#fff; padding:6px 14px; border-radius:20px; font-weight:bold; box-shadow: 0 2px 8px rgba(168,85,247,0.5);">💜 Redesigned v2</span>
 
 
-  <h1>Visual Testing for<br>Laravel Applications</h1>
-  <p>Zero-config visual regression testing powered by Percy and UVT. Full route coverage across every commit.</p>
+  <h1>Visual Testing for<br>Laravel — v2 Violet</h1>
+  <p>Zero-config visual regression testing powered by Percy and UVT. New violet theme with full route coverage across every commit.</p>
 
   <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
     <a href="/services" class="btn btn-primary">Explore Features →</a>
